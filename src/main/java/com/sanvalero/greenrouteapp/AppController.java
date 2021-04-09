@@ -70,6 +70,8 @@ public class AppController implements Initializable {
 
     @FXML
     public void start(Event event) {
+        tvData.getItems().clear();
+        tvDataL.getItems().clear();
         String whatToShow = cbChoose.getValue();
 
         switch (whatToShow) {
@@ -100,22 +102,6 @@ public class AppController implements Initializable {
                         .whenComplete((string, throwable) -> pbLoad.setVisible(false));
 
                 break;
-
-            /*case "<<ALL>>":
-                CompletableFuture.runAsync(() -> {
-                    pbLoad.setProgress(ProgressIndicator.INDETERMINATE_PROGRESS);
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    loadingLocations();})
-                        .whenComplete((string, throwable) -> {
-                            loadingRoads();
-                            pbLoad.setVisible(false);
-                        });
-
-                break;*/
         }
     }
 
@@ -128,7 +114,7 @@ public class AppController implements Initializable {
 
         String name = road.getName();
         String date = road.getBuildDate();
-        String length = String.valueOf(road.getName());
+        String length = String.valueOf(road.getLength());
         String option = "";
         option = (road.isToll()) ? "Sí" : "No";
 
