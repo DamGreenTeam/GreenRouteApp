@@ -90,6 +90,12 @@ public class AppController implements Initializable {
                 break;
 
             case "Locations":
+                engine.load("");
+                lName.setText("");
+                lDate.setText("");
+                lLength.setText("");
+                lToll.setText("");
+
                 pbLoad.setVisible(true);
                 CompletableFuture.runAsync(() -> {
                     pbLoad.setProgress(ProgressIndicator.INDETERMINATE_PROGRESS);
@@ -145,7 +151,7 @@ public class AppController implements Initializable {
             column.setCellValueFactory(new PropertyValueFactory<>(field.getName()));
             tvDataL.getColumns().add(column);
         }
-        tvData.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+        tvDataL.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 
     public void loadingRoads() {
