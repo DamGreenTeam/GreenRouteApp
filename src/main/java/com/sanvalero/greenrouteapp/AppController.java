@@ -122,7 +122,7 @@ public class AppController implements Initializable {
         String date = road.getBuildDate();
         String length = String.valueOf(road.getLength());
         String option = "";
-        option = (road.isToll()) ? "Sí" : "No";
+        option = (road.isToll()) ? "Yes" : "No";
 
         lName.setText(name);
         lDate.setText(date);

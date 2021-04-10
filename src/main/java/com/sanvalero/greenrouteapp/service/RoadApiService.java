@@ -14,9 +14,9 @@ import java.util.List;
 
 public interface RoadApiService {
 
-    @GET("/GreenRoute/roads")
+    @GET("/greenroute/roads")
     Observable<List<Road>> getAllRoads();
 
-    @GET("/GreenRoute/locations")
+    @GET("/greenroute/locations")
     Observable<List<Location>> getAllLocations();
 }

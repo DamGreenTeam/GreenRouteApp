@@ -25,11 +25,23 @@
             </Label>
             <ProgressBar fx:id="pbLoad" layoutX="298.0" layoutY="304.0" prefHeight="18.0" prefWidth="191.0" progress="0.0" />
             <WebView fx:id="wvGraphic" layoutX="14.0" layoutY="146.0" prefHeight="269.0" prefWidth="269.0" />
-            <Label layoutX="13.0" layoutY="437.0" prefHeight="17.0" prefWidth="57.0" text="Nombre:" />
-            <Label layoutX="14.0" layoutY="481.0" prefHeight="17.0" prefWidth="57.0" text="Fecha:" />
-            <Label layoutX="14.0" layoutY="513.0" prefHeight="17.0" prefWidth="57.0" text="Longitud:" />
-            <Label layoutX="16.0" layoutY="547.0" prefHeight="17.0" prefWidth="51.0" text="Peaje:" />
-            <Label fx:id="lName" layoutX="77.0" layoutY="432.0" prefHeight="25.0" prefWidth="95.0">
+            <Label layoutX="13.0" layoutY="437.0" prefHeight="17.0" prefWidth="57.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="481.0" prefHeight="17.0" prefWidth="57.0" text="Date:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="513.0" prefHeight="17.0" prefWidth="57.0" text="Length:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="13.0" layoutY="547.0" prefHeight="17.0" prefWidth="51.0" text="Toll:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="lName" layoutX="80.0" layoutY="432.0" prefHeight="25.0" prefWidth="95.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
